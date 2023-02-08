@@ -1,816 +1,134 @@
-<html><head>
-<link rel="shortcut icon" href="/img/favicon.png">
-<link rel="stylesheet" href="/bitrix/templates/uvc/css/core.min.css">
-<link rel="stylesheet" href="/bitrix/templates/uvc/css/skin.css">
-<link rel="stylesheet" href="/bitrix/templates/uvc/plugins/masterslider/style/masterslider2.css">
-<link href="/bitrix/templates/uvc/plugins/masterslider/skins/default/style.css" rel="stylesheet" type="text/css">
-<script src="/bitrix/templates/uvc/plugins/masterslider/jquery.min.js"></script>
-<script src="/bitrix/templates/uvc/plugins/masterslider/jquery.easing.min.js"></script>
-<script src="/bitrix/templates/uvc/plugins/masterslider/masterslider.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900">
+    <title>Document</title>
+    <style>
+
+body{
+    background-color: white;
+}
+  
+#timer {
+  color: #eeeeee;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: .7em;
+  letter-spacing: 5px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: #EF2F3C;
+}
+
+.hours {
+  background: #eeeeee;
+  color: #183059;
+}
+
+.minutes {
+  background: #276FBF;
+}
+
+.seconds {
+  background: #F0A202;
+}
+
+.numbers {
+  font-family: 'Montserrat', sans-serif;
+  color:  #183059;
+  font-size: 4em;
+  text-align: center;
+}
+
+.white {
+  position: absolute;
+  background:  #eeeeee;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+
+.red {
+  position: absolute;
+  background:  #EF2F3C;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+ 
+}
+
+.blue {
+  position: absolute;
+  background:  #276FBF;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
-
-
-
-
-
-
-
-
-<style id="arf50788d4a5style">
-                .arf50788d4a5hidden{ position:absolute !important; opacity:0 !important; pointer-events:none !important}
-            </style></head>
-<body style="position: relative;">
-
-
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style>
-
-
-.typed-cursor {display:none;
 }
 
 
-
-
-
-body, .content
-{
-    background:none transparent!important; overflow:hidden!important;
-}
-
-
-
-
-canvas{z-index:-1; position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin:auto;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@font-face {
-font-family: Montserrat;
-src: url(/upload/iblock/3ac/3ac700bcabde672de6d762fbfcebbc3d.ttf) format("truetype");
-}
-.font{
-font-family: 'Montserrat', sans-serif;
-}
-
-
-
-
-
-
-
-
-
-@font-face {
-font-family: Concert One;
-src: url(/upload/iblock/6a7/6a715ed30bba62ddd891dca7ce39455e.ttf) format("truetype");
-}
-.font2{
-font-family: 'Concert One', sans-serif;
-}
-
-@font-face {
-font-family: Montserrat;
-src: url(/upload/iblock/3ac/3ac700bcabde672de6d762fbfcebbc3d.ttf) format("truetype");
-}
-.font3{
-font-family: 'Montserrat', sans-serif;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.css1 {text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000,
-     1px 1px 10px #141414;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.backimg{
-filter:
-
-
-
-
-;}
-
-
-
-
-
-
-
-.size {
-font-size:  6rem
-}
-
-.size2 {
-font-size:  20rem
-}
-
-.size3 {
-font-size:  5rem
-}
-
-.color1 {
-color:  #FFFFFF}
-
-.color2 {
-color:  #FFFFFF}
-
-.color3 {
-color:  #FFFFFF}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.overlayframe{
-width:276px;
-}
-
-
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="master-slider ms-skin-light-2 ms-wk" id="masterslider" style="visibility: visible; opacity: 1; margin: 0px; height: 973px; width: 1103px;"><div class="ms-container"><div class="ms-inner-controls-cont" style="max-width: 1920px;"><div class="ms-view ms-basic-view" style="width: 1103px; height: 973px; left: 0px;"><div class="ms-slide-container" style="transform: translateX(0px) translateZ(0px);"><div class="ms-slide ms-sl-selected" style="width: 1103px; height: 973px; left: 0px;">
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="ms-slide-bgvideocont"><video data-autopause="false" data-duration="1" data-mute="true" data-loop="true" data-fill-mode="fill" class="ms-slide-bgvideo" style="opacity: 1; width: 1729.78px; height: 973px; margin-top: 0px; margin-left: -313.5px;">
-<source id="webm" src="/upload/iblock/6cd/6cdb3d6fe0dbc340df0cd21001adc831.webm" type="video/webm">
-</video></div><div class="ms-slide-bgcont" style="height: 100%; opacity: 1;"><img class="backimg" src="/upload/iblock/f3f/f3fb37c00229ac2d937a05195adce0c2.png" alt="" style="height: 973px; width: 3356.85px; margin-top: 0px; margin-left: -1127px;"></div><div class="ms-slide-layers" style="left: 0px; max-width: 1920px;"><div class="ms-anim-layers" style=""><h1 id="text1" class="ms-layer font title-xlarge size color1 shadow center  css1 ms-hover-active" style="top: 400.562px; left: 362.5px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 34.4688px; line-height: 34.4688px;">
-El concierto inicia en: 
-</h1><h1 id="daysTicker" class="ms-layer font2 title-xlarge size2 color2 shadow center  css1 ms-hover-active" style="top: 457.724px; left: 259.964px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 114.896px; line-height: 114.896px;">94</h1><h1 id="hoursTicker" class="ms-layer font2 title-xlarge size2 color2 shadow center  css1 ms-hover-active" style="top: 457.724px; left: 418.318px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 114.896px; line-height: 114.896px;">23</h1><h1 id="minsTicker" class="ms-layer font2 title-xlarge size2 color2 shadow center  css1 ms-hover-active" style="top: 457.724px; left: 570.182px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 114.896px; line-height: 114.896px;">43</h1><h1 id="secsTicker" class="ms-layer font2 title-xlarge size2 color2 shadow center  css1 ms-hover-active" style="top: 457.724px; left: 733.536px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 114.896px; line-height: 114.896px;">14</h1><h1 class="ms-layer font3 title-xlarge size3 color3 shadow center  css1 ms-hover-active" style="top: 586.896px; left: 279.964px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 28.724px; line-height: 28.724px;">
-Days
-</h1><h1 class="ms-layer font3 title-xlarge size3 color3 shadow center  css1 ms-hover-active" style="top: 586.896px; left: 432.818px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 28.724px; line-height: 28.724px;">
-Hours
-</h1><h1 class="ms-layer font3 title-xlarge size3 color3 shadow center  css1 ms-hover-active" style="top: 586.896px; left: 566.682px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 28.724px; line-height: 28.724px;">
-Minutes
-</h1><h1 class="ms-layer font3 title-xlarge size3 color3 shadow center  css1 ms-hover-active" style="top: 586.896px; left: 724.536px; margin: 0px 0px 11.4896px; padding: 0px; font-size: 28.724px; line-height: 28.724px;">
-Seconds
-</h1></div></div></div></div></div></div></div>
-
-
-
-
-
-
-
-
-</div><!-- end of masterslider1 -->
-
-
-
-
-<script type="text/javascript">
-
-
-
-var slider = new MasterSlider();
-slider.setup('masterslider' , {
-width:1920,
-height:1050,
-space:0,
-layout:'fullscreen',
-grabCursor:false,
-swipe:false,
-});
-
-
-
-
-
-
-var countDownDate = new Date('May 13, 2023 22:00:00').getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-// Get todays date and time
-var now = new Date().getTime();
-
-// Find the distance between now an the count down date
-var distance = countDownDate - now;
-
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000); 
-var days = (days.toLocaleString(undefined,{minimumIntegerDigits: 2}));  
-var hours = (hours.toLocaleString(undefined,{minimumIntegerDigits: 2}));  
-var minutes = (minutes.toLocaleString(undefined,{minimumIntegerDigits: 2}));
-var seconds = (seconds.toLocaleString(undefined,{minimumIntegerDigits: 2}));
-
-// Display the result in the element with id="demo"
-document.getElementById("daysTicker").innerHTML = days;
-document.getElementById("hoursTicker").innerHTML = hours;
-document.getElementById("minsTicker").innerHTML = minutes;
-document.getElementById("secsTicker").innerHTML = seconds;
-
-// If the count down is finished, write some text 
-if (distance < 0) {
-clearInterval(x);
-document.getElementById("daysTicker").innerHTML = "00";
-document.getElementById("hoursTicker").innerHTML = "00";
-document.getElementById("minsTicker").innerHTML = "00";
-document.getElementById("secsTicker").innerHTML = "00";
-}
-
-}, 1000);
-
-
-
-
-
-
-
-
-</script><script src="chrome-extension://ihkdedfdcocppnnaiigjpckhegifagfd/js/SetStyles.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-
-   
-
- 
-
-
-
-</body></html>
+    </style>
+</head>
+<body>
+    
+<div id="timer">
+
+    <div class="days"> 
+        <div id="days" class="numbers "> </div>days</div> 
+      <div class="hours"> 
+        <div  id="hours" class="numbers"> </div>hours</div> 
+      <div class="minutes"> 
+        <div  id="minutes" class="numbers"> </div>minutes</div> 
+      <div   class="seconds"> 
+        <div id="seconds" class="numbers"> </div>seconds</div> 
+      </div>
+
+</div>
+
+</body>
+<script>
+    const year = new Date().getFullYear();
+const myDate = new Date('May 13, 2023 22:00:00');
+console.log(myDate);
+
+// countdown
+let timer = setInterval(function() {
+
+  // get today's date
+  const today = new Date().getTime();
+
+  // get the difference
+  const diff = myDate - today;
+
+  // math
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  // display
+  document.getElementById("days").innerHTML=days
+  document.getElementById("hours").innerHTML=hours
+  document.getElementById("minutes").innerHTML=minutes
+  document.getElementById("seconds").innerHTML=seconds
+
+
+
+}, 1);
+</script>
+</html>
